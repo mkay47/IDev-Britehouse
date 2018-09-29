@@ -1,7 +1,9 @@
-﻿namespace Hackathon.Orchestration.Interface
+﻿using System.Collections.Generic;
+
+namespace Hackathon.Orchestration.Interface
 {
     public interface IDataCleanupOrchestration
     {
-        string CleanAndLoad();
+        List<string> CleanAndLoad();
     }
 }
