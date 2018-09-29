@@ -10,7 +10,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 
-namespace IDev_Solution
+namespace Hackathon
 {
     public class Startup
     {
@@ -34,6 +34,8 @@ namespace IDev_Solution
             {
                 app.UseDeveloperExceptionPage();
             }
+
+            app.UseStaticFiles();
 
             app.UseMvc();
         }
